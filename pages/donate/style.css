@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+.panda {
+    height: 390px;
+    background-image: url(../../assets/images/panda_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.information {
+    background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+}
+
+.information__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 180px;
+}
+
+.information__wrapper > p:nth-of-type(1) {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 130%;
+    color: #FFFFFF;
+}
+
+.information__wrapper > p:nth-of-type(2) {
+    margin-top: 10px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+.information__wrapper > p:nth-of-type(3) {
+    margin-top: 40px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 130%;
+    color: #FE9013;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    padding: 40px 92px 62px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.52);
+    backdrop-filter: blur(2px);
+}
+
+.description > p:nth-of-type(1) {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 120%;
+    text-align: center;
+    color: #FE9013;
+}
+
+.description > p:nth-of-type(2) {
+    margin-top: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    color: #333B41;
+}
+
+.animals-widjet {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.animals-widjet__description {
+    display: flex;
+    align-items: center;
+}
+
+.animals-widjet__description__text {
+    display: flex;
+    flex-direction: column;
+}
+
+.animals-widjet__description__text > p:nth-of-type(1) {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 80%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.animals-widjet__description__text > p:nth-of-type(2) {
+    margin-top: 11px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #333B41;
+}
+
+.animals-widjet__description__x {
+    margin-left: 11px;
+    margin-right: 64px;
+    width: 14px;
+    height: 14px;
+}
+
+.amount {
+    width: 100%;
+    max-width: 976px;
+
+}
+
+.amount > p {
+    margin-top: 48px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #000000;
+}
+
+.progress-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 17px;
+    width: 100%;
+    max-width: 976px;
+    height: 27px;
+    background: #404950;
+    border-radius: 2px;
+}
+
+
+.price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 62px;
+    margin-top: -6px;
+}
+
+.price:hover {
+    cursor: pointer;
+}
+
+.circle-outer {
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.circle-inner {
+    box-sizing: border-box;
+    width: 22.95px;
+    height: 22.95px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.price:hover .circle-outer,
+.price:hover .circle-inner {
+    cursor: pointer;
+}
+
+.point {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: #FFEE2E;
+}
+
+.donation {
+    margin-top: 6px;
+    margin-left: -8px;
+}
+
+.donation-value {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #333B41;
+}
+
+.donation-value::before {
+    content: url(../../assets/icons/dollar-icon.png);
+}
+
+.dollar-orange-icon::before {
+    content: url(../../assets/icons/dollar-orange-icon.png);
+}
+
+.price:hover span {
+    cursor: pointer;
+}
+
+.line-outer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 2px;
+    margin-top: -14px;
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    margin-left: 26px;
+    margin-right: 30px;
+    background: #72828E;
+}
+
+.amount-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    width: 100%;
+    max-width: 298px;
+}
+
+.another-amount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 268px;
+    height: 54px;
+    box-sizing: border-box;
+    border: 1px solid #929699;
+    border-radius: 2px;
+}
+
+.amount-value {
+    width: 100%;
+    max-width: 130px;
+    margin-left: 16px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    border: none;
+    background-color: transparent;
+    -moz-appearance: textfield;
+    outline: none;
+}
+
+.amount-value::-webkit-outer-spin-button,
+.amount-value::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+.another-amount img {
+    margin-right: 17px;
+}
+
+.amount-period {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    width: 218px;
+}
+
+.period {
+    display: flex;
+    align-items: center;
+    width: 84px;
+    height: 22px;
+}
+
+.period input[type=radio] {
+    width: 16px;
+    height: 16px;
+}
+
+.period label {
+    margin-left: 10px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #333B41;
+}
+
+.amount-form .button {
+    margin-top: 31px;
+}
+
+.amount-form + p {
+    margin-top: 30.02px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #333B41;
+}
+
+@media (max-width: 1000px) {
+    .panda {
+        margin-left: -172px;
+    }
+
+    .information__wrapper {
+        padding-bottom: 30px;
+    }
+
+    .information__wrapper > p:nth-of-type(2) {
+        margin-top: 30px;
+    }
+
+    .description {
+        margin-top: 40px;
+        padding: 20px 65px 46px;
+    }
+
+    .description > p:nth-of-type(2) {
+        margin-top: 10px;
+    }
+
+    .progress-bar {
+        max-width: 810px;
+    }
+
+    .price:nth-child(1) {
+        display: none;
+    }
+
+    .amount-period {
+        margin-top: 26px;
+    }
+}
+
+@media (max-width: 640px) {
+    .panda {
+        height: 335px;
+        margin-top: 34px;
+        margin-left: -272px;
+    }
+
+    .information__wrapper {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .information__wrapper > p:nth-of-type(2) {
+        margin-top: 20px;
+    }
+
+    .information__wrapper > p:nth-of-type(3) {
+        margin-top: 30px;
+    }
+
+    .description {
+        margin-top: 30px;
+        padding: 30px 0px 31px;
+    }
+
+    .description > p:nth-of-type(2) {
+        margin-top: 20px;
+    }
+
+    .animals-widjet {
+        margin-top: 50px;
+    }
+
+    .amount > p {
+        margin-top: 41px;
+    }
+
+    .progress-bar {
+        margin-top: 7px;
+        max-width: 600px;
+    }
+
+    .price:nth-child(1),
+    .price:nth-child(2),
+    .price:nth-child(3) {
+        display: none;
+    }
+
+    .price {
+        max-width: 72px;
+    }
+
+    .line {
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+
+    .another-amount {
+        max-width: 180px;
+        height: 42px;
+    }
+
+    .amount-period {
+        margin-top: 31px;
+    }
+}
+
+@media (max-width: 320px) {
+    .panda {
+        height: 187px;
+        margin-left: -148.71px;
+    }
+
+    .information__wrapper {
+        padding-bottom: 35px;
+    }
+
+    .description {
+        padding: 20px 0px 20px;
+    }
+
+    .description > p:nth-of-type(2) {
+        margin-top: 10px;
+    }
+
+    .animals-widjet {
+        flex-wrap: nowrap;
+        align-items: flex-end;
+        margin-top: 10.28px;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .animals-widjet__description__text {
+        width: 100%;
+        max-width: 72px;
+    }
+
+    .animals-widjet__description__text > p:nth-of-type(1) {
+        font-size: 40.6015px;
+    }
+
+    .animals-widjet__description__text > p:nth-of-type(2) {
+        margin-top: 6.2px;
+        font-size: 9.02255px;
+    }
+
+    .animals-widjet__description__x {
+        margin-left: 6.02px;
+        margin-right: 36.09px;
+        width: 100%;
+        max-width: 7.89px;
+        height: 100%;
+        max-height: 7.89px;
+    }
+
+    .widjet__description__x img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .animals-widjet__img {
+        width: 100%;
+        max-width: 160.15px;
+        height: 100%;
+        max-height: 138.72px;
+    }
+
+    .animals-widjet__img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .amount > p {
+        margin-top: 41px;
+    }
+
+    .progress-bar {
+        margin-top: 7px;
+        max-width: 300px;
+    }
+
+    .price {
+        max-width: 45px;
+    }
+
+    .donation span {
+        font-size: 13px;
+    }
+
+    .donation-value::before {
+        content: url(../../assets/icons/dollar-icon-320.png);
+    }
+
+    .dollar-orange-icon::before {
+        content: url(../../assets/icons/dollar-orange-icon-320.png);
+    }
+
+    .line {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .amount-form {
+        margin-top: 75px;
+    }
+
+    .amount-form + p {
+        font-size: 14px;
+    }
+}
